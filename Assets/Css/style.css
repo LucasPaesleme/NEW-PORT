@@ -2,6 +2,34 @@
     margin: 0;
     box-sizing: border-box;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* FONTS */
+/* interface */
+.interface{
+    margin: 1rem;
+}
+
+/* logo*/
+.logo img{
+
+}
+/* Header */
+
+.container-nav nav{
+    display: flex;
+    align-items: center;
+}
+
+.container-nav ul li{
+    display: inline-block;
+    padding: 1rem;
+}
+
+
+
+
+/* Menu Mobile */
+.menu-mobile{
+    display: none;
+}
