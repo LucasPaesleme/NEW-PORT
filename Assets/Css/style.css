@@ -5,6 +5,19 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body{
+    background-color: black;
+    color: white;
+}
+
+/* Variaveis Para Cores */
+
+:root{
+    --green-one:#39ff14;
+    --white:#ffff;
+    --black:#000;
+}
+
 /* interface */
 .interface{
     margin: 1rem;
@@ -12,7 +25,14 @@
 
 /* logo*/
 .logo img{
+    width: 6rem;
+    cursor: pointer;
+    transition: .2s;
+}
 
+.logo img:hover{
+    transform: scale(1.07);
+    
 }
 /* Header */
 
@@ -24,9 +44,52 @@
 .container-nav ul li{
     display: inline-block;
     padding: 1rem;
+    cursor: pointer;
+    transition: .2s;
+}
+.container-nav ul li:hover{
+    transform: scaleX(1.05);
 }
 
 
+.navi-tens a {
+    display: inline-block;
+    padding: 10px; 
+    text-decoration: none;
+}
+  
+.navi-tens a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: transparent;
+    transition: 0.3s ease;
+}
+  
+.navi-tens a:hover::after {
+    background-color: var(--green-one);
+}
+
+
+.container-nav a{
+    text-decoration: none;
+    color: var(--white);
+    font-family: "Ubuntu", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+.btn-contato button{
+    background: var(--green-one);
+    color: var(--white);
+    width: 5rem;
+    height: 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
 
 /* Menu Mobile */
