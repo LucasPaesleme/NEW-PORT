@@ -16,6 +16,7 @@ body{
     --green-one:#39ff14;
     --white:#ffff;
     --black:#000;
+    --greenEyes: #37ff1429;
 }
 
 /* interface */
@@ -115,3 +116,49 @@ body{
 .menu-mobile{
     display: none;
 }
+
+
+/* Home section */
+
+/* section.inicial{
+    height: 3rem;
+} */
+
+
+.first-image{
+    position: relative;
+
+}
+
+
+.first-image img {
+    filter: grayscale(100%);
+    width: 55rem;
+    mask-image: linear-gradient(to bottom left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    position: relative;
+    left: 30rem;
+    bottom: 20rem;
+}
+
+.background-eyes {
+    position: absolute;
+    bottom: 40rem;
+    left: 60rem;
+    width: 10.5rem;
+    height: 25rem;
+    background-color: var(--greenEyes);
+    border-radius: 10px;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    
+  }
+
+  .first-text h1 , p{
+    font-family: "Ubuntu", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .first-text h1{
+    font-size: 7rem;
+  }
