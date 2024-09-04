@@ -20,7 +20,7 @@ body{
 
 /* interface */
 .interface{
-    margin: 1rem;
+    margin: 2rem 8rem 0px;
 }
 
 /* logo*/
@@ -39,6 +39,7 @@ body{
 .container-nav nav{
     display: flex;
     align-items: center;
+    
 }
 
 .container-nav ul li{
@@ -82,14 +83,32 @@ body{
 
 
 .btn-contato button{
-    background: var(--green-one);
+    background: none;
+    border: 1px solid var(--white);
     color: var(--white);
-    width: 5rem;
-    height: 2rem;
-    border: none;
+    width: 9rem;
+    height: 3rem;
     border-radius: 5px;
     cursor: pointer;
+    margin-left: auto;
+    position: relative;
+    margin-left: 55rem ;
+    font-family: "Ubuntu", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+    transition: .2s ease-out;
 }
+
+.btn-contato button:hover{
+    transform: scale(1.05);
+    color: var(--black);
+    background-color: var(--green-one);
+    border: none;
+}
+
+
+
 
 
 /* Menu Mobile */
