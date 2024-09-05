@@ -17,6 +17,8 @@ body{
     --white:#ffff;
     --black:#000;
     --greenEyes: #37ff1429;
+    --Mask-image-left:linear-gradient(to bottom left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    --Mask-image-bottom:linear-gradient(to bottom , rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
 
 /* interface */
@@ -134,8 +136,8 @@ body{
 .first-image img {
     filter: grayscale(100%);
     width: 55rem;
-    mask-image: linear-gradient(to bottom left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    mask-image: var(--Mask-image-left);
+    mask-image: var(--Mask-image-bottom);
     position: relative;
     left: 30rem;
     bottom: 20rem;
@@ -149,7 +151,8 @@ body{
     height: 25rem;
     background-color: var(--greenEyes);
     border-radius: 10px;
-    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    mask-image: var(--Mask-image-bottom);
+    mask-image:var(--Mask-image-left);
     
   }
 
