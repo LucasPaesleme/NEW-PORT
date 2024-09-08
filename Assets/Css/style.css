@@ -8,6 +8,7 @@
 body{
     background-color: black;
     color: white;
+    overflow: hidden;
 }
 
 /* Variaveis Para Cores */
@@ -113,10 +114,11 @@ body{
 
 .btn-contato button:hover{
     transform: scale(1.05);
-    color: var(--black);
     background-color: var(--green-one);
     border: none;
+    color: var(--black);
 }
+
 
 
 
@@ -162,13 +164,8 @@ body{
 
   /* NAME */
 
-  .first-text #writer0-js{
-    position: relative;
 
-
-  }
-
-.first-text h1 , span>.first-text{
+.first-text h1 , span>.text{
     font-family: "Ubuntu", system-ui;
     font-weight: 400;
     font-style: normal;
@@ -181,7 +178,7 @@ body{
     font-size: 8rem;
   }
 
-.typing .text{
+.typing {
     position: relative;
     color: var(--white);
     font-family: "Ubuntu", system-ui;
@@ -191,30 +188,10 @@ body{
     top: 15rem;
 }
 
-.typing .text.second-text{
-    color: var(--green-one);
-
+.second-text{
+    color: var(--green-typing);
 }
 
-.typing .text.second-text:before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: var(--black);
-    border-left: 2px solid var(--green-typing);
-    animation: typing 5s steps(12) infinite;
-}
 
-@keyframes typing{
-    40%, 60%{
-    left: 100%;
-    }
-    100%{
-     left: 0%;
-    }
-}
 
 
