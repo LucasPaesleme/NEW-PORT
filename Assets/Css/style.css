@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: black;
+    background-color: var(--black);
     color: white;
     overflow: hidden;
 }
@@ -92,7 +92,7 @@ body{
     font-style: normal;
 }
 
-
+/* BTN CONTATO */
 
 .btn-contato button{
     background: none;
@@ -120,10 +120,6 @@ body{
 }
 
 
-
-
-
-
 /* Menu Mobile */
 .menu-mobile{
     display: none;
@@ -136,8 +132,6 @@ body{
     position: relative;
 
 }
-
-
 .first-image img {
     filter: grayscale(100%);
     width: 55rem;
@@ -146,7 +140,7 @@ body{
     position: relative;
     left: 37.3rem;
     bottom: 20rem;
-    z-index: -1;
+    z-index: -2;
 }
 
 .background-eyes {
@@ -159,8 +153,10 @@ body{
     border-radius: 10px;
     mask-image: var(--Mask-image-bottom);
     mask-image:var(--Mask-image-left);
+    z-index: -1;
     
   }
+
 
   /* NAME */
 
@@ -172,7 +168,7 @@ body{
     position: relative;
     top: 15rem;
  
-  }
+}
 
 .first-text h1{
     font-size: 8rem;
@@ -190,6 +186,22 @@ body{
 
 .second-text{
     color: var(--green-typing);
+}
+
+
+/* Scroll Icon */
+.scroll{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.scroll h5{
+    font-size: 1rem;
+    position: relative;
+    bottom: 30rem;
+    font-weight: 200;
 }
 
 
