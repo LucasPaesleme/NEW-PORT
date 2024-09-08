@@ -14,6 +14,7 @@ body{
 
 :root{
     --green-one:#39ff14;
+    --green-typing:#67fe4c;
     --white:#ffff;
     --black:#000;
     --greenEyes: #37ff1429;
@@ -24,6 +25,9 @@ body{
 /* interface */
 .interface{
     margin: 2rem 8rem 0px;
+}
+.particles-js{
+    background-color: var(--black);
 }
 
 /* logo*/
@@ -55,10 +59,14 @@ body{
     transform: scaleX(1.05);
 }
 
+.list-bar{
+    margin-left: 5rem;
+}
+
 
 .navi-tens a {
     display: inline-block;
-    padding: 10px; 
+    padding: 5px; 
     text-decoration: none;
 }
   
@@ -122,11 +130,6 @@ body{
 
 /* Home section */
 
-/* section.inicial{
-    height: 3rem;
-} */
-
-
 .first-image{
     position: relative;
 
@@ -139,16 +142,17 @@ body{
     mask-image: var(--Mask-image-left);
     mask-image: var(--Mask-image-bottom);
     position: relative;
-    left: 30rem;
+    left: 37.3rem;
     bottom: 20rem;
+    z-index: -1;
 }
 
 .background-eyes {
     position: absolute;
-    bottom: 40rem;
-    left: 60rem;
-    width: 10.5rem;
-    height: 25rem;
+    bottom: 45rem;
+    left: 68rem;
+    width: 10rem;
+    height: 22rem;
     background-color: var(--greenEyes);
     border-radius: 10px;
     mask-image: var(--Mask-image-bottom);
@@ -156,12 +160,61 @@ body{
     
   }
 
-  .first-text h1 , p{
+  /* NAME */
+
+  .first-text #writer0-js{
+    position: relative;
+
+
+  }
+
+.first-text h1 , span>.first-text{
     font-family: "Ubuntu", system-ui;
     font-weight: 400;
     font-style: normal;
+    position: relative;
+    top: 15rem;
+ 
   }
 
-  .first-text h1{
-    font-size: 7rem;
+.first-text h1{
+    font-size: 8rem;
   }
+
+.typing .text{
+    position: relative;
+    color: var(--white);
+    font-family: "Ubuntu", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    top: 15rem;
+}
+
+.typing .text.second-text{
+    color: var(--green-one);
+
+}
+
+.typing .text.second-text:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--black);
+    border-left: 2px solid var(--green-typing);
+    animation: typing 5s steps(12) infinite;
+}
+
+@keyframes typing{
+    40%, 60%{
+    left: 100%;
+    }
+    100%{
+     left: 0%;
+    }
+}
+
+

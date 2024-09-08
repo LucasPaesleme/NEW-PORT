@@ -11,27 +11,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <head class="head">
+    <div class="particles-js">
+            
+    </div>
+    <header class="head">
         <div class="interface">
             <div class="container-nav">
-                <nav class="navbar-desktop">
+                <nav class="navbar-desktop" id="home">
                     <div class="logo">
-                        <a href="#">
+                        <a href="#home">
                             <img src="Assets/images/Nova-Logo-white-teste.png" alt="Logo tipo de Lucas Paes Dev">
                         </a>
                     </div><!--Logo-->
-                    <ul>
-                        <li class="navi-tens"><a href="#home">Home</a></li>
-                        <li class="navi-tens"><a href="#about">Sobre</a></li>
-                        <li class="navi-tens"><a href="#projects">Projetos</a></li>
-                        <li class="navi-tens"><a href="#skills">Skills</a></li>
-                    </ul>
+                    <div class="list-bar">
+                        <ul>
+                            <li class="navi-tens"><a href="#home">Home</a></li>
+                            <li class="navi-tens"><a href="#about">Sobre</a></li>
+                            <li class="navi-tens"><a href="#projects">Projetos</a></li>
+                            <li class="navi-tens"><a href="#skills">Skills</a></li>
+                        </ul>
+                    </div><!--list-bar-->
                     <div class="btn-contato">
-                        <a href="https://wa.me/5521994066779?text=Ol%C3%A1%2C+Me+chame+no+whatsapp" target="_blank">
-                            <button>Contato</button>
-                        </a>
+                        <button>
+                            <a href="https://wa.me/5521994066779?text=Ol%C3%A1%2C+Me+chame+no+whatsapp" target="_blank">Contato</a>
+                        </button>
+                        
                     </div> <!--btn-contato-->
                 </nav><!--nav-bar-desktop-->
             </div><!--Container-Nav-->
@@ -50,13 +57,17 @@
                     </nav>
                 </div><!--menu-mobile-->   
         </div><!--interface-->
-    </head>
+    </header>
         <section class="inicial" id="home">
             <div class="interface">
                 <div class="first-page-container">
                     <div class="first-text">
                         <h1 class="name">Lucas Paes</h1>
-                        <p>Olá, meu nome é Lucas Paes e eu sou desenvolvedor Web.</p>
+                        <div class="typing">
+                            <span class="text first-text">Olá, meu nome é Lucas Paes e eu sou </span>
+                            <span  class="text second-text">desenvolvedor Web.</span>
+                        </div>
+                        
                         <div class="first-image">
                             <img src="Assets/images/NEW-IMAGE-PERFIL 1.png" alt="Selfie de Lucas Paes">
                             <div class="background-eyes"></div>
