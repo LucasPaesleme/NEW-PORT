@@ -21,6 +21,7 @@ body{
     --greenEyes: #37ff1429;
     --Mask-image-left:linear-gradient(to bottom left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
     --Mask-image-bottom:linear-gradient(to bottom , rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    --LinksStyle: text-decoration:none;
 }
 
 /* interface */
@@ -200,9 +201,34 @@ body{
 .scroll h5{
     font-size: 1rem;
     position: relative;
-    bottom: 30rem;
+    bottom: 28rem;
     font-weight: 200;
 }
+
+.scroll>a{
+    text-decoration: var(--LinksStyle);
+    color: var(--green-typing);
+    transition: .2s ease-in-out;
+    animation-name: Scrolling ;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes Scrolling{
+    0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-15px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+}
+
+
+
 
 
 
