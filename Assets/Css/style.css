@@ -8,7 +8,11 @@
 body{
     background-color: var(--black);
     color: white;
-    overflow: hidden;
+    
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 /* Variaveis Para Cores */
@@ -95,7 +99,16 @@ body{
 
 /* BTN CONTATO */
 
-.btn-contato button{
+.btn-contato {
+    margin-left: auto; 
+}
+
+.btn-contato a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.btn-contato button {
     background: none;
     border: 1px solid var(--white);
     color: var(--white);
@@ -103,22 +116,24 @@ body{
     height: 3rem;
     border-radius: 5px;
     cursor: pointer;
-    margin-left: auto;
-    position: relative;
-    margin-left: 55rem ;
     font-family: "Ubuntu", system-ui;
     font-weight: 400;
     font-style: normal;
     font-size: 1.2rem;
     transition: .2s ease-out;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.btn-contato button:hover{
+.btn-contato button:hover {
     transform: scale(1.05);
     background-color: var(--green-one);
     border: none;
     color: var(--black);
 }
+
+
 
 
 /* Menu Mobile */
@@ -129,26 +144,32 @@ body{
 
 /* Home section */
 
+.inicial{
+    height: 100vh; /* Ocupa toda a altura da tela */
+
+}
+
 .first-image{
     position: relative;
 
 }
 .first-image img {
     filter: grayscale(100%);
-    width: 55rem;
+    width: 60rem;
+    height:60rem ;
     mask-image: var(--Mask-image-left);
     mask-image: var(--Mask-image-bottom);
     position: relative;
-    left: 37.3rem;
-    bottom: 20rem;
-    z-index: -2;
+    left: 32rem;
+    bottom: 23rem;
+    z-index: -1;
 }
 
 .background-eyes {
     position: absolute;
-    bottom: 45rem;
-    left: 68rem;
-    width: 10rem;
+    bottom: 42rem;
+    left: 65rem;
+    width: 11rem;
     height: 22rem;
     background-color: var(--greenEyes);
     border-radius: 10px;
@@ -167,7 +188,7 @@ body{
     font-weight: 400;
     font-style: normal;
     position: relative;
-    top: 15rem;
+    top: 19rem;
  
 }
 
@@ -182,7 +203,7 @@ body{
     font-weight: 400;
     font-style: normal;
     font-size: 1.5rem;
-    top: 15rem;
+    top: 19rem;
 }
 
 .second-text{
@@ -198,11 +219,18 @@ body{
 
 }
 
-.scroll h5{
+.scroll a {
     font-size: 1rem;
     position: relative;
-    bottom: 28rem;
+    bottom: 26rem;
     font-weight: 200;
+    padding: 2px;
+}
+
+.scroll a i{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
 }
 
 .scroll>a{
@@ -228,6 +256,11 @@ body{
 }
 
 
+/* ABOUT SECTION */
+
+section.about-me{
+    margin-top: 15rem;
+}
 
 
 

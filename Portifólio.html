@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" id="home">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,28 +12,31 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <script crossorigin="anonymous" src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
-    <header class="head">
+    <header class="head" >
         <div class="interface">
             <div class="container-nav">
-                <nav class="navbar-desktop" id="home">
+                <nav class="navbar-desktop">
                     <div class="logo">
-                        <a href="#home">
+                        <a href="#home" aria-label="Voltar ao início">
                             <img src="Assets/images/Nova-Logo-white-teste.png" alt="Logo tipo de Lucas Paes Dev">
                         </a>
                     </div><!--Logo-->
                     <div class="list-bar">
                         <ul>
-                            <li class="navi-tens"><a href="#home">Home</a></li>
+                            <li class="navi-tens"><a href="#home">Home </a></li>
                             <li class="navi-tens"><a href="#about">Sobre</a></li>
                             <li class="navi-tens"><a href="#projects">Projetos</a></li>
                             <li class="navi-tens"><a href="#skills">Skills</a></li>
                         </ul>
                     </div><!--list-bar-->
                     <div class="btn-contato">
-                        <button>Contato</button>
-                        <a href="https://wa.me/5521994066779?text=Ol%C3%A1%2C+Me+chame+no+whatsapp" target="_blank"></a>
+                        <a href="https://wa.me/5521994066779?text=Ol%C3%A1%2C+Me+chame+no+whatsapp" target="_blank">
+                            <button>Contato</button>
+                        </a>
                     </div> <!--btn-contato-->
                 </nav><!--nav-bar-desktop-->
             </div><!--Container-Nav-->
@@ -68,12 +71,32 @@
                         </div><!--first-image-->
                     </div><!--first-text-->
                     <div class="scroll">
-                       <a href="#about-me"><h5>Role para Baixo</h5></a>
+                        <a href="#about-me">
+                            Role para Baixo<i class="fas fa-chevron-down"></i> 
+                        </a>
                     </div><!--scroll-->
                 </div><!--first-page-container-->
             </div><!--interface-->
         </section><!--Inicial-page-->
-        <section class="about-me" id="#about-me">
+        <section class="about-me" id="about-me">
+            <div class="interface">
+                <div class="name-container">
+                    <h2>Olá, <span class="quebra-de-linha">Tudo certo por aí ?</span></h2>
+                    <div class="about">
+                        <p class="about-text">
+                            Meu nome é <span class="name">Lucas Paes</span>, sou desenvolvedor web.
+                        </p>
+                        <p class="about-text">Atualmente sou estudante do curso de Análise e desenvolvimento de Sistemas, pela Universidade Cruzeiro do Sul. Além do curso de graduação, tenho me dedicado ao 
+                            desenvolvimento Front-End, onde eu tenho me adiquirido bastante conhecimento e expertise nos "três pilares da web".
+                        </p>
+                        <p class="abou-text">Minha historia com a área da TI começa ainda quando adolescente, onde era fascinado por jogos online, tive a oportunidade de montar meu primeiro computador, logo percebi que era a área que eu gostaria de seguir.</p>
+                        <p class="about-text">Após um tempo, passei a me perguntar <span class="question">"Como esse jogo foi criado, como essa pagina web ficou com esse design"</span>foi ai que me encontrei estudando desenvolvimento</p>
+                        <p class="about-text">Meu foco e me tornar um bom desenvolvedor Full-Stack, mas vamos por partes rs.</p>
+                    </div><!--about-->
+                </div><!--name-container-->
+            </div><!--interface-->
+        </section><!--about-me-->
+        <section class="skills">
 
         </section>
 </body>
