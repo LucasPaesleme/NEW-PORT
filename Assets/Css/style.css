@@ -15,6 +15,26 @@ html{
     scroll-behavior: smooth;
 }
 
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 8px; 
+}
+
+::-webkit-scrollbar-track {
+    background:var(--black); 
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--green-one); 
+    border-radius: 10px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #126603; /* Cor da barra de rolagem quando o usuário passa o mouse */
+}
+
 /* Variaveis Para Cores */
 
 :root{
@@ -26,14 +46,16 @@ html{
     --Mask-image-left:linear-gradient(to bottom left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
     --Mask-image-bottom:linear-gradient(to bottom , rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
     --LinksStyle: text-decoration:none;
+    --hover-links:#0c4203;
+    --black-opacity:#000000df;
+    
+    
 }
+
 
 /* interface */
 .interface{
     margin: 2rem 8rem 0px;
-}
-.particles-js{
-    background-color: var(--black);
 }
 
 /* logo*/
@@ -49,11 +71,24 @@ html{
 }
 /* Header */
 
+
 .container-nav nav{
     display: flex;
     align-items: center;
+    position: fixed;
+    z-index: 100;
+    margin-top: -2rem;
+    transition: .2s ease-in;
     
 }
+
+.container-nav.scrolled nav {
+    background-color:var(--black-opacity) ;
+    height: 4rem;
+    width: 100%;
+}
+
+
 
 .container-nav ul li{
     display: inline-block;
@@ -74,6 +109,13 @@ html{
     display: inline-block;
     padding: 5px; 
     text-decoration: none;
+}
+
+.navi-tens a.active::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: var(--green-one); /* Cor do sublinhado para o link ativo */
 }
   
 .navi-tens a::after {
@@ -100,7 +142,7 @@ html{
 /* BTN CONTATO */
 
 .btn-contato {
-    margin-left: auto; 
+    margin-left: 55rem; 
 }
 
 .btn-contato a {
@@ -124,6 +166,7 @@ html{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    z-index: 2;
 }
 
 .btn-contato button:hover {
@@ -145,7 +188,7 @@ html{
 /* Home section */
 
 .inicial{
-    height: 100vh; /* Ocupa toda a altura da tela */
+    height: 100vh; 
 
 }
 
@@ -161,13 +204,13 @@ html{
     mask-image: var(--Mask-image-bottom);
     position: relative;
     left: 32rem;
-    bottom: 23rem;
+    bottom: 15rem;
     z-index: -1;
 }
 
 .background-eyes {
     position: absolute;
-    bottom: 42rem;
+    bottom: 35rem;
     left: 65rem;
     width: 11rem;
     height: 22rem;
@@ -222,9 +265,13 @@ html{
 .scroll a {
     font-size: 1rem;
     position: relative;
-    bottom: 26rem;
+    bottom: 18rem;
     font-weight: 200;
     padding: 2px;
+}
+
+.scroll a:hover{
+    color:var(--hover-links);
 }
 
 .scroll a i{
@@ -259,10 +306,10 @@ html{
 /* ABOUT SECTION */
 
 section.about-me{
-    margin-top: 15rem;
+    margin-top: 10rem;
+    height: 1080px;
+
 }
-
-
 
 
 
