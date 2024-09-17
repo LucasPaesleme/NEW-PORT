@@ -315,14 +315,23 @@ html{
 /* ABOUT SECTION */
 
 section.about-me{
-    margin-top: 20rem;
+    margin-top: 10rem;
     height: 1080px;
 
 }
 
 .name-container{
-    display: flex;
+    text-align: center;
     padding: 30px;
 }
+
+.about-container{
+    background-color: #0e0e0e;
+    border: 1px solid var(--green-typing);
+    height: 40rem;
+}
+
+
+
 
 
