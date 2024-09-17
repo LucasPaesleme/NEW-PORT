@@ -69,6 +69,13 @@ html{
     transform: scale(1.07);
     
 }
+
+/* Alinhamento nav bar */
+
+.logo img , .list-bar , .btn-contato{
+    margin-left: 8rem;
+}
+
 /* Header */
 
 
@@ -79,13 +86,15 @@ html{
     z-index: 100;
     margin-top: -2rem;
     transition: .2s ease-in;
+    width: 100%;
+   
     
 }
 
 .container-nav.scrolled nav {
     background-color:var(--black-opacity) ;
     height: 4rem;
-    width: 100%;
+    
 }
 
 
@@ -306,10 +315,14 @@ html{
 /* ABOUT SECTION */
 
 section.about-me{
-    margin-top: 10rem;
+    margin-top: 20rem;
     height: 1080px;
 
 }
 
+.name-container{
+    display: flex;
+    padding: 30px;
+}
 
 
