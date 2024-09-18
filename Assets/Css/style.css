@@ -378,4 +378,32 @@ span.name{
     color: var(--green-typing);
 }
 
+
+
 /* Skills */
+section.skills{
+    margin-top: -15rem;
+}
+
+
+.skills-container{
+    text-align: center;
+}
+
+.icons-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* gap: 4rem; */
+    margin-top: 5rem;
+}
+
+.skills-txt{
+    border-bottom: 2px solid var(--green-typing);
+    display: inline-block;
+    margin-bottom: 4rem;
+}
+
+.icons-container > *{
+    font-size: 200px;
+}
