@@ -312,25 +312,53 @@ section.about-me{
 
 }
 .hello{
-    text-align: center;
+    text-align: start;
     padding: 2rem; 
+    display: flex;
+    align-items: center;
+    margin: 2rem 8rem 0px;
+
+}
+
+.hello h2{
+    transition: .2s ease-in;
+}
+
+.hello h2:hover{
+    transform: scaleX(1.05);
+}
+
+.hello>h3{
+    margin-left: 10rem;
+     margin-top: 4rem;
+     border-bottom: 1px solid var(--greenEyes); 
+     display: inline-block;
+     transition: .2s ease-in;
+ }
+
+.hello h3:hover{
+    transform: scaleX(1.03);
 }
 span.quebra-de-linha{
     display: block;
+
 }
 
 .about-container{
     background-color: #121212e8;
     border: 1px solid var(--green-typing);
-    height: 40rem;
+    height: 37rem;
     width: 70rem;
-    display: flex;
+    
 }
 
-.name-conatainer{
-    display: flex;
-}
+
 .about{
+    margin-top: 3rem;
+    line-height: 25px;
+    font-size: 19px;
+    line-height: 30px;
+    text-align: center;
     margin-top: 3rem;
 }
 
