@@ -2,7 +2,9 @@
     margin: 0;
     box-sizing: border-box;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Ubuntu", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }
 
 body{
@@ -143,9 +145,6 @@ html{
 .container-nav a{
     text-decoration: none;
     color: var(--white);
-    font-family: "Ubuntu", system-ui;
-    font-weight: 400;
-    font-style: normal;
 }
 
 /* BTN CONTATO */
@@ -167,9 +166,6 @@ html{
     height: 3rem;
     border-radius: 5px;
     cursor: pointer;
-    font-family: "Ubuntu", system-ui;
-    font-weight: 400;
-    font-style: normal;
     font-size: 1.2rem;
     transition: .2s ease-out;
     padding: 0;
@@ -236,9 +232,6 @@ html{
 
 
 .first-text h1 , span>.text{
-    font-family: "Ubuntu", system-ui;
-    font-weight: 400;
-    font-style: normal;
     position: relative;
     top: 19rem;
  
@@ -251,9 +244,6 @@ html{
 .typing {
     position: relative;
     color: var(--white);
-    font-family: "Ubuntu", system-ui;
-    font-weight: 400;
-    font-style: normal;
     font-size: 1.5rem;
     top: 19rem;
 }
@@ -317,21 +307,36 @@ html{
 section.about-me{
     margin-top: 10rem;
     height: 1080px;
+    display: flex;
+    justify-content: center;
 
 }
-
-.name-container{
+.hello{
     text-align: center;
-    padding: 30px;
+    padding: 2rem; 
+}
+span.quebra-de-linha{
+    display: block;
 }
 
 .about-container{
-    background-color: #0e0e0e;
+    background-color: #121212e8;
     border: 1px solid var(--green-typing);
     height: 40rem;
+    width: 70rem;
+    display: flex;
 }
 
+.name-conatainer{
+    display: flex;
+}
+.about{
+    margin-top: 3rem;
+}
 
+span.name{
+    color: var(--green-typing);
+}
 
-
+/* Skills */
 
