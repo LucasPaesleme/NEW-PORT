@@ -350,8 +350,8 @@ span.quebra-de-linha{
 }
 
 .about-container{
-    background-color: #121212e8;
-    border: 1px solid var(--green-typing);
+    /* background-color: #121212e8; */
+    /* border: 1px solid var(--green-typing); */
     height: 37rem;
     width: 70rem;
     
@@ -375,10 +375,31 @@ span.quebra-de-linha{
 
 
 span.name{
-    color: var(--green-typing);
+    color: var(--black);
+    font-weight: bold;
+}
+span.lucas{
+    color: var(--green-one);
 }
 
+/* Socials */
+.socials{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 2rem;
+}
+.socials i{
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--green-one);
+    transition: .2s ease-in;
+}
 
+.socials i:hover{
+    transform: scale(1.08);
+    
+}
 
 /* Skills */
 section.skills{
@@ -388,6 +409,9 @@ section.skills{
 
 .skills-container{
     text-align: center;
+    /* background-color: #121212e8 ;
+    border: 1px solid var(--green-typing); */
+    height: 720px;
 }
 
 .icons-container{
@@ -401,9 +425,31 @@ section.skills{
 .skills-txt{
     border-bottom: 2px solid var(--green-typing);
     display: inline-block;
-    margin-bottom: 4rem;
+    margin: 3rem 0px 8rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.html,
+.css,
+.javascript,
+.figma,
+.github{
+    transition: .2s;
+    width: 100px;
+}
+.html:hover,
+.css:hover,
+.javascript:hover,
+.figma:hover,
+.github:hover{
+    transform: scale(1.50);
+    color: var(--green-typing);
+    
 }
 
-.icons-container > *{
-    font-size: 200px;
+.icons-container i{
+    font-size: 8rem;
+    cursor: pointer;
+   
 }
+
