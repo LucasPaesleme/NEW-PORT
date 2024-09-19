@@ -401,6 +401,8 @@ span.lucas{
     
 }
 
+
+
 /* Skills */
 section.skills{
     margin-top: -15rem;
@@ -420,6 +422,7 @@ section.skills{
     justify-content: space-around;
     /* gap: 4rem; */
     margin-top: 5rem;
+
 }
 
 .skills-txt{
@@ -443,7 +446,7 @@ section.skills{
 
 
 .icons-container i{
-    font-size: 6rem;
+    font-size: 7rem;
     cursor: pointer;
     transition: .2s;
 }
@@ -452,4 +455,11 @@ section.skills{
     transform: scale(1.08);
     color: var(--green-one);
 }
+
+.skills-container p{
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    color: var(--green-one);
+}
+
 
