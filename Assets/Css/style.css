@@ -316,7 +316,7 @@ section.about-me{
     padding: 2rem; 
     display: flex;
     align-items: center;
-    margin: 2rem 8rem 0px;
+    margin: 2rem 4rem 0px;
     background: url(../images/Vector\ 1\ \(1\).png);
     background-size: 196px;
     background-position: start;
@@ -334,11 +334,11 @@ section.about-me{
 }
 
 .hello>h3{
-    margin-left: 8rem;
-     margin-top: 4rem;
-     border-bottom: 1px solid var(--greenEyes); 
-     display: inline-block;
-     transition: .2s ease-in;
+    margin-left: 12rem;
+    margin-top: 4rem;
+    border-bottom: 1px solid var(--greenEyes); 
+    display: inline-block;
+    transition: .2s ease-in;
  }
 
 .hello h3:hover{
@@ -434,22 +434,22 @@ section.skills{
 .javascript,
 .figma,
 .github{
-    transition: .2s;
-    width: 100px;
-}
-.html:hover,
-.css:hover,
-.javascript:hover,
-.figma:hover,
-.github:hover{
-    transform: scale(1.50);
-    color: var(--green-typing);
-    
+    width: 250px;
+    height: 400px;
+    /* background-color: aquamarine; */
+    padding: 10px;
+
 }
 
+
 .icons-container i{
-    font-size: 8rem;
+    font-size: 6rem;
     cursor: pointer;
-   
+    transition: .2s;
+}
+
+.icons-container i:hover{
+    transform: scale(1.08);
+    color: var(--green-one);
 }
 
