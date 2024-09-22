@@ -147,6 +147,7 @@ html{
     color: var(--white);
 }
 
+
 /* BTN CONTATO */
 
 .btn-contato {
@@ -190,7 +191,9 @@ html{
 }
 
 
-/* Home section */
+    /* --------------------------------------------------------------------------------------------------------------------------------------- */   
+
+                                                                    /* HOME SECTION */
 
 .inicial{
     height: 100vh; 
@@ -227,8 +230,9 @@ html{
     
   }
 
+      /* --------------------------------------------------------------------------------------------------------------------------------------- */
 
-  /* NAME */
+                                                                      /* NAME */
 
 
 .first-text h1 , span>.text{
@@ -253,7 +257,9 @@ html{
 }
 
 
-/* Scroll Icon */
+    /* --------------------------------------------------------------------------------------------------------------------------------------- */
+
+                                                                      /* SCROLL ICON */
 .scroll{
     display: flex;
     align-items: center;
@@ -301,8 +307,9 @@ html{
       }
 }
 
+    /* --------------------------------------------------------------------------------------------------------------------------------------- */
 
-/* ABOUT SECTION */
+                                                                  /* ABOUT SECTION */
 
 section.about-me{
     margin-top: 10rem;
@@ -350,8 +357,6 @@ span.quebra-de-linha{
 }
 
 .about-container{
-    /* background-color: #121212e8; */
-    /* border: 1px solid var(--green-typing); */
     height: 37rem;
     width: 70rem;
     
@@ -382,28 +387,109 @@ span.lucas{
     color: var(--green-one);
 }
 
-/* Socials */
-.socials{
+
+    /* --------------------------------------------------------------------------------------------------------------------------------------- */
+
+                                                                        /* SOCIALS */
+
+ul {
+    list-style: none;
+    margin-top: 1rem;
+    gap: 1rem;
+  }
+  
+  .example-2 {
     display: flex;
     justify-content: center;
-    margin-top: 2rem;
-    gap: 2rem;
-}
-.socials i{
-    text-decoration: none;
-    font-size: 2rem;
-    color: var(--green-one);
-    transition: .2s ease-in;
-}
+    align-items: center;
+  }
+  .example-2 .icon-content {
+    margin: 0 10px;
+    position: relative;
+  }
+  .example-2 .icon-content .tooltip {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    font-size: 14px;
+    transition: all 0.3s ease;
+  }
+  .example-2 .icon-content:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    top: -50px;
+  }
+  .example-2 .icon-content a {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: var(--white);
+    background-color: var(--green-one);
+    transition: all 0.3s ease-in-out;
+  }
+  .example-2 .icon-content a:hover {
+    box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
+  }
+  .example-2 .icon-content a svg {
+    position: relative;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+  }
+  .example-2 .icon-content a:hover {
+    color: white;
+  }
+  .example-2 .icon-content a .filled {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #000;
+    transition: all 0.3s ease-in-out;
+  }
+  .example-2 .icon-content a:hover .filled {
+    height: 100%;
+  }
+  
+  .example-2 .icon-content a[data-social="linkedin"] .filled,
+  .example-2 .icon-content a[data-social="linkedin"] ~ .tooltip {
+    background-color: #0274b3;
+  }
+  
+  .example-2 .icon-content a[data-social="github"] .filled,
+  .example-2 .icon-content a[data-social="github"] ~ .tooltip {
+    background-color: #24262a;
+  }
+  .example-2 .icon-content a[data-social="instagram"] .filled,
+  .example-2 .icon-content a[data-social="instagram"] ~ .tooltip {
+    background: linear-gradient(
+      45deg,
+      #405de6,
+      #5b51db,
+      #b33ab4,
+      #c135b4,
+      #e1306c,
+      #fd1f1f
+    );
+  }
 
-.socials i:hover{
-    transform: scale(1.08);
-    
-}
+    /* --------------------------------------------------------------------------------------------------------------------------------------- */
 
+                                                                        /* SKILLS */
 
-
-/* Skills */
 section.skills{
     margin-top: -15rem;
 }
@@ -411,8 +497,6 @@ section.skills{
 
 .skills-container{
     text-align: center;
-    /* background-color: #121212e8 ;
-    border: 1px solid var(--green-typing); */
     height: 720px;
 }
 
@@ -420,46 +504,185 @@ section.skills{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    /* gap: 4rem; */
-    margin-top: 5rem;
+    margin-top: 1rem;
 
 }
 
-.skills-txt{
+.base-txt{
     border-bottom: 2px solid var(--green-typing);
     display: inline-block;
     margin: 3rem 0px 8rem;
     font-weight: bold;
     font-size: 1.5rem;
 }
-.html,
-.css,
-.javascript,
-.figma,
-.github{
-    width: 250px;
-    height: 400px;
-    /* background-color: aquamarine; */
-    padding: 10px;
 
+.icons i {
+    font-size: 8rem;
+    text-align: center;
+    margin-top: 1.5rem;
+    color: var(--white);
+    margin-bottom: 10px;
 }
 
 
-.icons-container i{
-    font-size: 7rem;
-    cursor: pointer;
+
+.textBox a{
+    text-decoration: none;
+    color: var(--white);
+    border-bottom: 1px solid var(--hover-links);
     transition: .2s;
 }
 
-.icons-container i:hover{
-    transform: scale(1.08);
-    color: var(--green-one);
+.textBox a:hover{
+    transform: scale(1.3) ;
 }
 
-.skills-container p{
-    font-size: 1.5rem;
-    margin-bottom: 25px;
-    color: var(--green-one);
+.card {
+    width: 195px;
+    height: 285px;
+    background: var(--greenEyes);
+    border-radius: 20px;
+    ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .img {
+    height: 30%;
+    position: absolute;
+    transition: 0.2s ease-in-out;
+    z-index: 1;
+  }
+  
+  .textBox {
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    transition: 0.2s ease-in-out;
+    z-index: 2;
+
+  }
+  
+  .textBox > .text {
+    font-weight: bold;
+  }
+  
+  .textBox > .head {
+    font-size: 20px;
+  }
+  
+  .textBox > .price {
+    font-size: 17px;
+  }
+  
+  .textBox > span {
+    font-size: 12px;
+    color: lightgrey;
+  }
+  
+  .card:hover > .textBox {
+    opacity: 1;
+  }
+  
+  .card:hover > .icons {
+    height: 65%;
+    filter: blur(5px);
+    animation: anim 3s infinite;
+  }
+  
+  @keyframes anim {
+    0% {
+      transform: translateY(0);
+    }
+  
+    50% {
+      transform: translateY(-20px);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .card:hover {
+    transform: scale(1.04) rotate(-1deg);
+  }
+
+
+    /* --------------------------------------------------------------------------------------------------------------------------------------- */
+                                                                    /*  PROJECTS SECTION */
+
+.txt-project-container{
+  text-align: center;
 }
 
+.card-project::before {
+  border-radius: 50%;
+  width: 7rem;
+  height: 7rem;
+  top: 20%;
+}
 
+.card::before,
+.card::after {
+  content: "";
+  background-color: #7090fa4b;
+  position: absolute;
+  filter: blur(10px);
+}
+
+.card-project {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+.card .red,
+.card .blue,
+.card .green {
+  width: 200px;
+  height: 180px;
+  font-family: "CustomFont", Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  backdrop-filter: blur(30px);
+  background-color: rgba(65, 65, 65, 0.11);
+  border: 1px solid rgba(144, 161, 255, 0.171);
+}
+
+.card-project .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.card-project .card p.tip {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.card-project .card p.second-text {
+  font-size: 0.7em;
+}
+
+.card-project .card:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.card-project:hover > .card:not(:hover) {
+  filter: blur(5px);
+  transform: scale(0.9, 0.9);
+}
