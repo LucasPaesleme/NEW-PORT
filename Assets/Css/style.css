@@ -516,10 +516,12 @@ section.skills{
     font-size: 1.5rem;
 }
 
+
+
 .icons i {
-    font-size: 8rem;
+    font-size: 4rem;
     text-align: center;
-    margin-top: 1.5rem;
+    margin-top: 3rem;
     color: var(--white);
     margin-bottom: 10px;
 }
@@ -534,15 +536,14 @@ section.skills{
 }
 
 .textBox a:hover{
-    transform: scale(1.3) ;
+    transform: scale(1.05) ;
 }
 
 .card {
-    width: 195px;
-    height: 285px;
+    width: 150px;
+    height: 150px;
     background: var(--greenEyes);
     border-radius: 20px;
-    ;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -550,71 +551,71 @@ section.skills{
     color: var(--white);
     transition: 0.2s ease-in-out;
     cursor: pointer;
-  }
+}
   
-  .img {
+.img {
     height: 30%;
     position: absolute;
     transition: 0.2s ease-in-out;
     z-index: 1;
-  }
+}
   
-  .textBox {
+.textBox {
     opacity: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 15px;
+    gap: 10px;
     transition: 0.2s ease-in-out;
     z-index: 2;
 
-  }
+}
   
-  .textBox > .text {
+.textBox > .text {
     font-weight: bold;
-  }
+}
   
-  .textBox > .head {
-    font-size: 20px;
-  }
+.textBox > .head {
+    font-size: 15px;
+}
   
-  .textBox > .price {
-    font-size: 17px;
-  }
+.textBox > .price {
+    font-size: 13px;
+}
   
-  .textBox > span {
+.textBox > span {
     font-size: 12px;
     color: lightgrey;
-  }
+}
   
-  .card:hover > .textBox {
+.card:hover > .textBox {
     opacity: 1;
-  }
+}
   
-  .card:hover > .icons {
+.card:hover > .icons {
     height: 65%;
     filter: blur(5px);
     animation: anim 3s infinite;
+}
+  
+@keyframes anim {
+  0% {
+    transform: translateY(0);
   }
   
-  @keyframes anim {
-    0% {
-      transform: translateY(0);
-    }
-  
-    50% {
-      transform: translateY(-20px);
-    }
-  
-    100% {
-      transform: translateY(0);
-    }
+  50% {
+    transform: translateY(-20px);
   }
   
-  .card:hover {
-    transform: scale(1.04) rotate(-1deg);
+  100% {
+    transform: translateY(0);
   }
+  }
+  
+.card:hover {
+  transform: scale(1.04) rotate(-1deg);
+}
 
 
     /* --------------------------------------------------------------------------------------------------------------------------------------- */
