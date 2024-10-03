@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
         speed: 150,
         loop: true
     }).type('Desenvolvedor web.', {delay: 900}).delete(18).type('FreeLancer.', {delay: 900}).delete(11)
-    .type('Gamer.',{delay: 900}).delete(6).type('Estudante.',{delay: 900})
+    .type('Técnico em Informática.',{delay: 900}).delete(23).type('Estudante.',{delay: 900}).delete(10).type('Gamer.',{delay: 900})
 
     .go()
 })
