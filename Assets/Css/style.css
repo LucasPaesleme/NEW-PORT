@@ -151,7 +151,7 @@ html{
 /* BTN CONTATO */
 
 .btn-contato {
-    margin-left: 55rem; 
+    margin-left: 45rem; 
 }
 
 .btn-contato a {
@@ -229,6 +229,12 @@ html{
     z-index: -1;
     
   }
+
+      /* --------------------------------------------------------------------------------------------------------------------------------------- */
+
+                                                                      /* BTNS */
+
+
 
       /* --------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -731,10 +737,16 @@ section.projects{
 
 .txt-project-container{
     text-align: center;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
+    margin-top: 10rem;
 }
 
+.projects-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
+}
 .pack-container {
     position: relative;
     display: flex;
