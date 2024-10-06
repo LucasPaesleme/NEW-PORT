@@ -151,7 +151,7 @@ html{
 /* BTN CONTATO */
 
 .btn-contato {
-    margin-left: 45rem; 
+    margin-left: 55rem; 
 }
 
 .btn-contato a {
@@ -235,6 +235,62 @@ html{
                                                                       /* BTNS */
 
 
+.float-btn-whats-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    opacity: 0; 
+    transition: opacity 0.5s ease; 
+    pointer-events: none; 
+}
+
+.float-btn-whats-container.visible {
+    opacity: 1; 
+    pointer-events: auto; 
+}
+
+
+.float-btn-whats {
+    background-color: var(--green-one);
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed; 
+    bottom: 10rem; 
+    left: 20px; 
+    z-index: 120;
+    animation: float 3s ease-in-out infinite;
+}
+
+.float-btn-whats:hover{
+    background-color: var(--black);
+}
+
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0); /* Posição original */
+    }
+    50% {
+        transform: translateY(-10px); /* Move para cima */
+    }
+}
+
+.float-btn-whats i{
+    text-decoration: none;
+    color: var(--white);
+}
+
+.float-btn-whats  i{
+    font-size: 30px;
+}
+
+.hidden{
+    display: none;
+}
 
       /* --------------------------------------------------------------------------------------------------------------------------------------- */
 
