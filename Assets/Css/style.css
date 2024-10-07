@@ -233,7 +233,7 @@ html{
       /* --------------------------------------------------------------------------------------------------------------------------------------- */
 
                                                                       /* BTNS */
-
+/* BTN WHATS */
 
 .float-btn-whats-container {
     position: fixed;
@@ -266,7 +266,7 @@ html{
 }
 
 .float-btn-whats:hover{
-    background-color: var(--black);
+    background-color: var(--white);
 }
 
 
@@ -281,8 +281,10 @@ html{
 
 .float-btn-whats i{
     text-decoration: none;
-    color: var(--white);
+    color: var(--black);
 }
+
+
 
 .float-btn-whats  i{
     font-size: 30px;
@@ -292,6 +294,33 @@ html{
     display: none;
 }
 
+/* BTN INICIO */
+
+.btn-inicio{
+    background-color: var(--greenEyes);
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed; 
+    bottom: 10rem; 
+    right: 20px; 
+    z-index: 120;
+    animation: float 3s ease-in-out infinite;
+
+}
+
+.btn-inicio i {
+    font-size: 30px;
+    color: var(--white);
+}
+
+.btn-inicio a{
+    text-decoration: none;
+    
+}
       /* --------------------------------------------------------------------------------------------------------------------------------------- */
 
                                                                       /* NAME */
