@@ -954,3 +954,54 @@ section.projects{
 .partir-de{
   font-size: 15px;
 }
+
+
+
+
+    /* --------------------------------------------------------------------------------------------------------------------------------------- */
+                                                        /*  FOOTER SECTION */
+
+
+
+
+
+
+
+
+footer{
+    margin: 20rem 0 2rem;
+    max-height: 10rem;
+
+}
+
+
+footer ul a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+footer ul i{
+    margin-right: 5px;
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+footer li:not(:last-child)::after {
+    content: "|"; 
+    margin: 0 10px; 
+    color: var(--white); 
+}
+
+footer h4{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.name-footer{
+    color: var(--green-one);
+}
