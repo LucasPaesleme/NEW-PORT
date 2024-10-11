@@ -163,6 +163,7 @@ html{
 .btn-contato a {
     display: inline-block;
     text-decoration: none;
+
 }
 
 .btn-contato button {
@@ -1038,7 +1039,24 @@ footer h4{
                                                         /*  BREAK POINTS */
 
 
+@media(min-width: 1280px) {
+    .navi-tens a {
+        font-size: 20px;
+    }
 
+    .btn-contato button {
+        font-size: 1.4rem;
+    }
+    
+    .scroll a {
+        bottom: 20rem;
+
+    }
+
+    section.services{
+        margin-top: 250px;       /* É PRECISO TERMINAR DE AJEITAR AS SECTIONS*/
+    }
+}
 
 @media screen and (max-width:1030px){
     .container-nav{
