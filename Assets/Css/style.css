@@ -8,8 +8,8 @@
 }
 
 body{
-    background-color: var(--black);
-    color: white;
+    background-color: var(--background-color);
+    color: var(--text-color);
     
 }
 
@@ -25,7 +25,7 @@ html{
 }
 
 ::-webkit-scrollbar-track {
-    background:var(--black); 
+    background:var(--backgournd-color); 
 }
 
 ::-webkit-scrollbar-thumb {
@@ -42,6 +42,9 @@ html{
 :root{
     --green-one:#39ff14;
     --green-typing:#67fe4c;
+    --background-color: #000;
+    --text-color:#fff;
+    --nav-white-theme:#ffffffdf;
     --white:#ffff;
     --black:#000;
     --greenEyes: #37ff1429;
@@ -59,6 +62,12 @@ html{
 .interface{
     margin: 2rem 8rem 0px;
 }
+
+
+
+    /* --------------------------------------------------------------------------------------------------------------------------------------- */   
+
+                                                            /* HEADER */
 
 /* logo*/
 .logo img{
@@ -78,9 +87,6 @@ html{
     margin-left: 8rem;
 }
 
-/* Header */
-
-
 .container-nav nav{
     display: flex;
     align-items: center;
@@ -94,7 +100,7 @@ html{
 }
 
 .container-nav.scrolled nav {
-    background-color:var(--black-opacity) ;
+    background-color: var(--black-opacity);
     height: 4rem;
     
 }
@@ -126,7 +132,7 @@ html{
     content: '';
     display: block;
     height: 2px;
-    background-color: var(--green-one); /* Cor do sublinhado para o link ativo */
+    background-color: var(--green-one); 
 }
   
 .navi-tens a::after {
@@ -144,7 +150,7 @@ html{
 
 .container-nav a{
     text-decoration: none;
-    color: var(--white);
+    color: var(--text-color);
 }
 
 
@@ -161,8 +167,8 @@ html{
 
 .btn-contato button {
     background: none;
-    border: 1px solid var(--white);
-    color: var(--white);
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
     width: 9rem;
     height: 3rem;
     border-radius: 5px;
@@ -185,10 +191,19 @@ html{
 
 
 
-/* Menu Mobile */
+/* MENU MOBILE */
+
 .menu-mobile{
+    background-color: var(--black-opacity);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
     display: none;
 }
+
 
 
     /* --------------------------------------------------------------------------------------------------------------------------------------- */   
@@ -338,7 +353,7 @@ html{
 
 .typing {
     position: relative;
-    color: var(--white);
+    color: var(--text-color);
     font-size: 1.5rem;
     top: 19rem;
 }
@@ -980,7 +995,7 @@ footer{
 
 footer ul a {
     text-decoration: none;
-    color: var(--white)
+    color: var(--text-color)
 }
 
 footer ul li a{
@@ -1005,7 +1020,7 @@ footer ul {
 footer li:not(:last-child)::after {
     content: "|"; 
     margin: 0 10px; 
-    color: var(--white); 
+    color: var(--text-color); 
 }
 
 footer h4{
@@ -1016,3 +1031,19 @@ footer h4{
 .name-footer{
     color: var(--green-one);
 }
+
+
+
+    /* --------------------------------------------------------------------------------------------------------------------------------------- */
+                                                        /*  BREAK POINTS */
+
+
+
+
+@media screen and (max-width:1030px){
+    .container-nav{
+        display: none;
+    }
+}
+
+/*  link do video para terminar o menu mobile. https://www.youtube.com/watch?v=ECJW8kVYzrI*/
