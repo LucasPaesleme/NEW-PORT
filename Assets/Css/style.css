@@ -402,6 +402,10 @@ html{
 
                                                                   /* ABOUT SECTION */
 
+main{
+    margin-top: -8rem;
+}
+
 section.about-me{
     margin-top: 10rem;
     height: 1080px;
@@ -582,7 +586,7 @@ ul {
                                                                         /* SKILLS */
 
 section.skills{
-    margin-top: -14rem;
+    margin-top: -15rem;
 }
 
 
@@ -957,7 +961,6 @@ section.projects{
 
 
 
-
     /* --------------------------------------------------------------------------------------------------------------------------------------- */
                                                         /*  FOOTER SECTION */
 
@@ -969,7 +972,7 @@ section.projects{
 
 
 footer{
-    margin: 20rem 0 2rem;
+    margin: 14rem 0 2rem;
     max-height: 10rem;
 
 }
@@ -977,7 +980,15 @@ footer{
 
 footer ul a {
     text-decoration: none;
-    color: var(--white);
+    color: var(--white)
+}
+
+footer ul li a{
+    transition: .5s ease;
+}
+
+footer ul li a:hover{
+    color: var(--green-one);
 }
 
 footer ul i{
